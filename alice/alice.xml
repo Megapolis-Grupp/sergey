@@ -12,9 +12,11 @@
             <item value="Есть два способа покупки. Тебе какой?"/>
         </output>
 
+		<sample>
+			<item value="Перый вариант"/>
+			<item value="Второй вариант"/>
 
-            <sample value="Перый вариант"/>
-            <sample value="Второй вариант"/>
+		</sample>
 
     </input>
 	
