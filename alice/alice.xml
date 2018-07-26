@@ -1,4 +1,5 @@
 <context>
+	<input pattern="* купить юр адрес *">
 	<output>
 		<item value="Привет от Мегаполис Групп!"/>
 		<item value="Здравствуйте!"/>
@@ -9,6 +10,7 @@
         <item value="Что такое бот"/>
         <item value="Купить юр адрес"/>
     </sample>
+	</input>
 
     <input pattern="* купить юр адрес *">
         <output>
