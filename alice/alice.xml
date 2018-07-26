@@ -7,8 +7,8 @@
 
     <input pattern="* (привет*|здравствуй*) *">
         <output if="full($UserName)">
-            <item value="Привет, $UserName! Рада снова видеть тебя!"/>
-            <item value="Здравствуй, $UserName! Я уже успела соскучиться..."/>
+            <item value="Привет, $UserName! Мы рады снова видеть тебя!"/>
+            <item value="Здравствуй, $UserName! мы уже успела соскучиться..."/>
         </output>
 
         <context if="empty($UserName)" id="name">
