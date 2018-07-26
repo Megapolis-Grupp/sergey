@@ -3,16 +3,29 @@
     <sample>
         <item value="Кто такая Алиса"/>
         <item value="Что такое бот"/>
+        <item value="Купить юр адрес"/>
     </sample>
 
+    <input pattern="* купить юр адрес *">
+        <output>
+            <item value="Купить юр адрес можно двумя способами, какой тебе нужен?"/>
+            <item value="Есть два способа покупки. Тебе какой?"/>
+        </output>
+
+        <context>
+            <sample value="Перый вариант"/>
+            <sample value="Второй вариант"/>
+        </context>
+    </input>
+	
     <input pattern="* (привет*|здравствуй*) *">
         <output if="full($UserName)">
-            <item value="Привет, $UserName! Мы рады снова видеть тебя!"/>
-            <item value="Здравствуй, $UserName! мы уже успела соскучиться..."/>
+            <item value="Привет, $UserName! Рада снова видеть тебя!"/>
+            <item value="Здравствуй, $UserName! Я уже успела соскучиться..."/>
         </output>
 
         <context if="empty($UserName)" id="name">
-            <output value="Привет! Меня зовут Сергей! А это - демонстрация моего навыка, созданного с помощью платформы zenbot. Как тебя зовут?"/>
+            <output value="Привет! Меня зовут Алиса! А это - демонстрация моего навыка, созданного с помощью платформы zenbot. Как тебя зовут?"/>
 
             <input pattern="$Text">
                 <var name="UserName" value="cap($Text)" scope="user"/>
