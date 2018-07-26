@@ -8,15 +8,15 @@
 
     <input pattern="* купить юр адрес *">
 		<context>
-			<output>
+
 				<item value="Купить юр адрес можно двумя способами, какой тебе нужен?"/>
 				<item value="Есть два способа покупки. Тебе какой?"/>
-			</output>
 
-			<context>
+
+
 				<sample value="Перый вариант"/>
 				<sample value="Второй вариант"/>
-			</context>
+
         </context>
     </input>
 	
