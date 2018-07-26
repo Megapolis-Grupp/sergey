@@ -1,5 +1,5 @@
 <context>
-	<input pattern="* купить юр адрес *">
+	<input pattern="*">
 	<output>
 		<item value="Привет от Мегаполис Групп!"/>
 		<item value="Здравствуйте!"/>
