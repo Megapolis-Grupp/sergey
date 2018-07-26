@@ -1,5 +1,9 @@
 <context>
-
+	<output>
+		<item value="Привет от Мегаполис Групп!"/>
+		<item value="Здравствуйте!"/>
+	</output>
+		
     <sample>
         <item value="Кто такая Алиса"/>
         <item value="Что такое бот"/>
