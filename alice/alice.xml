@@ -12,10 +12,10 @@
             <item value="Есть два способа покупки. Тебе какой?"/>
         </output>
 
-        <context>
+
             <sample value="Перый вариант"/>
             <sample value="Второй вариант"/>
-        </context>
+
     </input>
 	
     <input pattern="* (привет*|здравствуй*) *">
