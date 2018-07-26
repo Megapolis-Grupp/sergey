@@ -6,9 +6,44 @@
 			<item value="Здравствуйте!"/>
 		</output>
 		<sample>
-			<item value="Кто такая Алиса"/>
-			<item value="Что такое бот"/>
+			<item value="Зарегить фирму"/>
 			<item value="Купить юр адрес"/>
+			<item value="Конец"/>
+		</sample>
+	</input>
+	
+	<input pattern="* зарегить фирму *">
+		<output>
+			<item value="Зарегиться можно двумя способами, какой тебе нужен?"/>
+			<item value="Есть два способа зарегиться. Тебе какой?"/>
+		</output>
+		<sample>
+			<item value="Бесплатный вариант"/>
+			<item value="За деньги"/>
+		</sample>
+	</input>
+
+	<input pattern="* бесплатный *">
+		<output>
+			<item value="Согласно бесплатному варианту делай так-то."/>
+			<item value="Если интересует бесплатный вариант, то лучше так."/>
+		</output>
+		<sample>
+			<item value="Зарегить фирму"/>
+			<item value="Купить юр адрес"/>
+			<item value="Конец"/>
+		</sample>
+	</input>
+
+	<input pattern="* деньги *">
+		<output>
+			<item value="Согласно варианту за деньги делай так-то."/>
+			<item value="Если интересует денежный вариант, то лучше так."/>
+		</output>
+		<sample>
+			<item value="Зарегить фирму"/>
+			<item value="Купить юр адрес"/>
+			<item value="Конец"/>
 		</sample>
 	</input>
 
@@ -29,9 +64,9 @@
 			<item value="Если интересует первый вариант, то лучше так."/>
 		</output>
 		<sample>
-			<item value="Кто такая Алиса"/>
-			<item value="Что такое бот"/>
+			<item value="Зарегить фирму"/>
 			<item value="Купить юр адрес"/>
+			<item value="Конец"/>
 		</sample>
 	</input>
 
@@ -41,9 +76,9 @@
 			<item value="Если интересует второй вариант, то лучше так."/>
 		</output>
 		<sample>
-			<item value="Кто такая Алиса"/>
-			<item value="Что такое бот"/>
+			<item value="Зарегить фирму"/>
 			<item value="Купить юр адрес"/>
+			<item value="Конец"/>
 		</sample>
 	</input>
 	
@@ -68,7 +103,7 @@
 		</context>
 	</input>
 
-	<input pattern="* пока *">
+	<input pattern="* (пока *|конец *| закончить *| останов*)">
 		<var name="end_session" value="javascript: true"/>
 		<output value="Ну пока, незнакомец!" if="empty($UserName)"/>
 		<output value="Пока-пока, $UserName!"/>
